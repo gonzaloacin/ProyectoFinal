@@ -2,6 +2,14 @@
   margin: 0;
   padding: 0;
 }
+    
+@font-face{
+  font-family: "Mermaid";
+  src: url("../fonts/Mermaid1001.ttf");
+  }
+  h1, h2, h3, h4, h5, p {
+    font-family: "Mermaid";
+    }
 
 body {
   display: grid;
@@ -10,6 +18,7 @@ body {
     "main main "
     "section section "
     "footer footer ";
+
 }
 /*MENU INICIO*/
 header {

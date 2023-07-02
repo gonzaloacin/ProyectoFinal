@@ -2,14 +2,20 @@
   margin: 0;
   padding: 0;
 }
-    
-@font-face{
+
+@font-face {
   font-family: "Mermaid";
   src: url("../fonts/Mermaid1001.ttf");
-  }
-  h1, h2, h3, h4, h5, p {
-    font-family: "Mermaid";
-    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Mermaid";
+}
 
 body {
   display: grid;
@@ -20,6 +26,7 @@ body {
     "footer footer ";
 
 }
+
 /*MENU INICIO*/
 header {
   grid-area: header;
@@ -65,9 +72,9 @@ main {
   /* Control de la altura con base en el texto del div*/
   height: auto;
   word-wrap: break-word;
-margin: 0 auto;
-display:block;
-overflow:auto;
+  margin: 0 auto;
+  display: block;
+  overflow: auto;
   /*display: grid;*/
   display: flex;
   align-items: center;
@@ -80,13 +87,14 @@ overflow:auto;
 
 .SectionHome div {
   background-color: rgba(27, 135, 185, 0.589);
-  
+
 }
 
 .SectionHome h5 {
   text-align: center;
   text-decoration: underline;
 }
+
 /*SECTION HOME FINAL*/
 /*SUB MENU PAGINAS INICIO*/
 .SubMenu {
@@ -95,6 +103,7 @@ overflow:auto;
   grid-area: main;
   align-items: center;
 }
+
 /*SUB MENU PAGINAS FINAL*/
 
 /*NOSOTROS INICIO*/
@@ -113,43 +122,36 @@ overflow:auto;
   align-content: center;
 }
 
-/*SERVICIOS INICIO*/
-
-
-
-
 
 /*SECTION PLANES INICIO*/
 .SectionPlanes {
   grid-area: section;
   max-height: 900px;
   min-height: 610px;
- /* display: grid;*/
+  /* display: grid;*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center; 
+  align-content: center;
   grid-template-rows: repeat(4, 400px);
   grid-template-columns: repeat(3, 400px);
 
 }
-  
+
 .Tarjeta {
   width: 300px;
   padding-right: 10px;
 
-  @media (max-widht: 480px ){
+  @media (max-widht: 480px) {
     grid-template-columns: repeat(1 / span 3);
-    }
+  }
 
 }
 
 
-
-
 /*SECTION PORTAFOLIO INICIO*/
-.ImgPortafolio{
+.ImgPortafolio {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -157,13 +159,11 @@ overflow:auto;
   align-content: center;
 
 }
-/* SECTION PORTAFOLIO FINAL*/
-
 
 
 /*CONTACTO INICIO*/
-.Contacto{
-height: 707px
+.Contacto {
+  height: 707px
 }
 
 ul {
@@ -175,7 +175,7 @@ ul {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
 }
 
-.contact-wrapper > * {
+.contact-wrapper>* {
   padding: 1em;
 }
 
@@ -227,7 +227,9 @@ ul {
 
 /* CONTACT INFO */
 
-.contact-info h4, .contact-info ul, .contact-info p {
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
   text-align: center;
   margin: 0 0 1rem 0;
 }
@@ -236,16 +238,18 @@ ul {
 @media(min-width: 700px) {
 
   .contact-wrapper {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
   }
-  .contact-wrapper > * {
-      padding: 2em;
+
+  .contact-wrapper>* {
+    padding: 2em;
   }
+
   .contact-info h4,
   .contact-info ul,
   .contact-info p {
-      text-align: left;
+    text-align: left;
   }
 }
 
@@ -255,6 +259,7 @@ footer {
   grid-area: footer;
   height: 150px;
   background-color: #427472;
-  color:white;
+  color: white;
 }
+
 /*FOOTER FINAL*/

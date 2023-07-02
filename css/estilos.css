@@ -20,10 +20,10 @@ p {
 body {
   display: grid;
   grid-template-areas:
-    "header  header "
-    "main main "
-    "section section "
-    "footer footer ";
+    "header  header header "
+    "main main main"
+    "section section section"
+    "footer footer footer";
 
 }
 
@@ -133,8 +133,8 @@ main {
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
-
 }
+
 
 /*PLANES INICIO*/
 .SectionPlanes {
@@ -164,6 +164,9 @@ flex-wrap: wrap;
 
 /*PORTAFOLIO*/
 .ImgPortafolio {
+  grid-area: section;
+  max-height: auto;
+  min-height: 610px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -217,26 +220,17 @@ ul {
   border: none;
   background: none;
   outline: 0;
-  color: #fff;
+  color: #000000;
   border-bottom: 1px solid #d63031;
 }
 
 .contact-form form button {
-  background: #B70E21;
+  background: #64c799;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
 }
 
-.contact-form form button:hover,
-.contact-form form button:focus {
-  background: #d63031;
-  color: #fff;
-  transition: background-color 1s ease-out;
-  outline: 0;
-}
-
-/* CONTACT INFO */
 
 .contact-info h4,
 .contact-info ul,
@@ -266,8 +260,73 @@ ul {
 
 /*FOOTER*/
 footer {
-  grid-area: footer;
-  height: 150px;
-  background-color: #427472;
-  color: white;
+grid-area: footer;
+text-transform: capitalize;
+background-color: #24262b;
+padding: 80px 0;
+
+
 }
+footer p{
+color: #ffffff;
+}
+
+.ContainerFooter {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.footer-row {
+ display: flex;
+ flex-wrap: wrap;
+  }
+
+.footer-links {
+width: 25%;
+padding: 0 15px;
+
+}
+
+
+.footer-links h4 {
+font-size: 20px;
+color: #fff;
+margin-bottom: 25px;
+font-weight: 500;
+border-bottom: 2px solid #00c3ff;
+padding-bottom: 10px;
+display: inline-block;
+
+  }
+
+.footer-links ul li a {
+font-size: 18px;
+text-decoration: none;
+color:#bbbbbb;
+display: block;
+margin-bottom: 15px;
+transition: all .3s ease;
+
+
+  }
+
+  .footer-links ul li a:hover {
+   color: #ffffff;
+   padding-left: 70px;
+
+    
+      }
+
+.social-link a {
+display: inline-block;
+min-height: 40px;
+width: 40px;
+background-color: rgba(255, 255, 0, .2);
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all .5s ease;
+
+     }

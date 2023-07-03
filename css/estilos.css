@@ -121,6 +121,16 @@ main {
   align-content: center;
 }
 
+
+.AboutMe {
+  color: black;
+  overflow: hide;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+
 /*SERVICIOS INICIO*/
 .Servicios_ {
   min-height: 630px;

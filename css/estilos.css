@@ -19,6 +19,7 @@ p {
 
 body {
   display: grid;
+  padding-top: 70px;
   grid-template-areas:
     "header  header header "
     "main main main"
@@ -31,6 +32,11 @@ body {
 header {
   grid-area: header;
   background-color: #04488d;
+  position: fixed;
+  z-index: 1000;
+  top:0;
+  width: 100%;
+
 }
 
 /*header nav {
@@ -109,7 +115,7 @@ main {
 .SectionAbout {
   grid-area: section;
   background-color: white;
-  height: 700px;
+  height: auto;
   /*display: grid;*/
   display: flex;
   flex-wrap: wrap;
@@ -117,7 +123,6 @@ main {
   grid-template-columns: repeat(2, 300px);
   /* justify-items: center;*/
   align-items: center;
-  justify-content: space-around;
   align-content: center;
 }
 
@@ -187,8 +192,9 @@ flex-wrap: wrap;
 
 
 /*CONTACTO*/
-.Contacto {
-  height: 707px
+.Contacto_ {
+  grid-area: section;
+  height: auto;
 }
 
 ul {
@@ -267,6 +273,8 @@ ul {
     text-align: left;
   }
 }
+
+
 
 /*FOOTER*/
 footer {

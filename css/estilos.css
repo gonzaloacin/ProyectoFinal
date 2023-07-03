@@ -8,18 +8,12 @@
   src: url("../fonts/Mermaid1001.ttf");
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
+h1, h2, h3, h4, h5, p {
   font-family: "Mermaid";
 }
 
 body {
   display: grid;
-  padding-top: 70px;
   grid-template-areas:
     "header  header header "
     "main main main"
@@ -32,10 +26,6 @@ body {
 header {
   grid-area: header;
   background-color: #04488d;
-  position: fixed;
-  z-index: 1000;
-  top:0;
-  width: 100%;
 
 }
 
@@ -189,7 +179,7 @@ flex-wrap: wrap;
   align-content: center;
 
 }
-
+/* MEDIA QUERY GALERIA */
 
 /*CONTACTO*/
 .Contacto_ {
@@ -247,7 +237,6 @@ ul {
   padding: 1em;
 }
 
-
 .contact-info h4,
 .contact-info ul,
 .contact-info p {
@@ -257,24 +246,19 @@ ul {
 
 /* MEDIA QUERY CONTACTO*/
 @media(min-width: 700px) {
-
   .contact-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
-
   .contact-wrapper>* {
     padding: 2em;
   }
-
   .contact-info h4,
   .contact-info ul,
   .contact-info p {
     text-align: left;
   }
 }
-
-
 
 /*FOOTER*/
 footer {

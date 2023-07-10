@@ -1,0 +1,34 @@
+
+@font-face {
+    font-family: "Mermaid";
+    src: url("../fonts/Mermaid1001.ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-family: "Mermaid";
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header  header header "
+        "main main main"
+        "section section section"
+        "footer footer footer";
+
+}
+
+
+
+/*SUB MENU PAGINAS*/
+.SubMenu {
+    height: 100px;
+    background-color: $secundary-background;
+    grid-area: main;
+    align-items: center;
+}

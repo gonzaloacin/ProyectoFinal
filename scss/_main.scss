@@ -1,0 +1,12 @@
+
+/*MAIN HOME INICIO*/
+main {
+    grid-area: main;
+    background-color: rgb(55, 83, 53);
+    height: $full-height;
+    width: $full-width;
+    /*display: grid;*/
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}

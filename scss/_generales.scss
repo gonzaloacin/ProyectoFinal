@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
 @font-face {
     font-family: "Mermaid";
@@ -23,12 +27,3 @@ body {
 
 }
 
-
-
-/*SUB MENU PAGINAS*/
-.SubMenu {
-    height: 100px;
-    background-color: $secundary-background;
-    grid-area: main;
-    align-items: center;
-}

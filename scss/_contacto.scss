@@ -15,8 +15,26 @@
 
 .contact-wrapper {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    
+   /* MEDIA QUERY CONTACTO*/
+    @media(min-width: 480px) {
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+    
+        .contact-wrapper>* {
+            padding: 2em;
+        }
+    
+        .contact-info h4,
+        .contact-info ul,
+        .contact-info p {
+            text-align: left;
+        }
+    }
+    
 }
-
 
 .contact-form form {
     display: grid;
@@ -49,7 +67,7 @@
 }
 
 .contact-form form button {
-    background: $secundary-background;
+    background: $teal;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -62,21 +80,4 @@
     margin: 0 0 1rem 0;
 }
 
-/* MEDIA QUERY CONTACTO*/
-@media(min-width: 480px) {
-    .contact-wrapper {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .contact-wrapper>* {
-        padding: 2em;
-    }
-
-    .contact-info h4,
-    .contact-info ul,
-    .contact-info p {
-        text-align: left;
-    }
-}
 

@@ -32,7 +32,7 @@
 /*NOSOTROS INICIO*/
 .SectionAbout {
     grid-area: section;
-    background-color:$primary-color;
+    background-color: $primary-color;
     height: auto;
     /*display: grid;*/
     display: flex;
@@ -107,21 +107,29 @@
     grid-template-rows: 250px;
     grid-gap: 20px;
 
-
 }
 
 .Container-Img .Box-Img {
     figure {
         width: $full-width;
         height: $full-height;
+
     }
 
     img {
         width: $full-width;
         height: $full-height;
         object-fit: cover;
+        transition: 0.5s;
+        object-fit: cover;
+    }
+
+
+    img:hover {
+        transform: scale(1.2);
     }
 }
+
 
 .Container-Img .Box-Img:nth-child(1) {
     grid-column-start: span 2;

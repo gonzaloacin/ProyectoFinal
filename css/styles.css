@@ -1,4 +1,5 @@
 /*VARIABLES*/
+/*COLORES*/
 * {
   margin: 0;
   padding: 0;
@@ -22,38 +23,22 @@ body {
   grid-template-areas: "header  header header " "main main main" "section section section" "footer footer footer";
 }
 
-/*SUB MENU PAGINAS*/
-.SubMenu {
-  height: 100px;
-  background-color: #64c799;
-  grid-area: main;
-  align-items: center;
-}
-
 /*MENU INICIO*/
 header {
   grid-area: header;
   background-color: #04488d;
 }
-
-/*header nav {
+header nav {
   display: flex;
 }
-
 header nav ul {
   display: flex;
   list-style-type: none;
 }
+header nav ul a:hover {
+  transform: scale(1.1);
+}
 
-header nav ul li {
-  display: flex;
-  margin-left: 10px;
-}
-header nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-*/
 /*MAIN HOME INICIO*/
 main {
   grid-area: main;
@@ -64,6 +49,15 @@ main {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
+}
+
+/*SUB MENU PAGINAS*/
+.SubMenu {
+  grid-area: main;
+  height: 100px;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(20, 121, 76) 35%, rgb(0, 212, 255) 100%);
+  align-items: center;
+  color: white;
 }
 
 /*SECTION HOME INICIO*/
@@ -177,6 +171,11 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.Container-Img .Box-Img img:hover {
+  transform: scale(1.2);
 }
 
 .Container-Img .Box-Img:nth-child(1) {
@@ -219,6 +218,21 @@ main {
 
 .contact-wrapper {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+  /* MEDIA QUERY CONTACTO*/
+}
+@media (min-width: 480px) {
+  .contact-wrapper .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-wrapper .contact-info h4,
+  .contact-wrapper .contact-info ul,
+  .contact-wrapper .contact-info p {
+    text-align: left;
+  }
 }
 
 .contact-form form {
@@ -249,7 +263,7 @@ main {
 }
 
 .contact-form form button {
-  background: #64c799;
+  background: #20c997;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
@@ -262,21 +276,6 @@ main {
   margin: 0 0 1rem 0;
 }
 
-/* MEDIA QUERY CONTACTO*/
-@media (min-width: 480px) {
-  .contact-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
-  .contact-wrapper > * {
-    padding: 2em;
-  }
-  .contact-info h4,
-  .contact-info ul,
-  .contact-info p {
-    text-align: left;
-  }
-}
 /*FOOTER*/
 footer {
   grid-area: footer;

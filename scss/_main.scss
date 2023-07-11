@@ -10,3 +10,14 @@ main {
     flex-flow: wrap;
     justify-content: center;
 }
+
+
+
+/*SUB MENU PAGINAS*/
+.SubMenu {
+    grid-area: main;
+    height: 100px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(20,121,76,1) 35%, rgba(0,212,255,1) 100%);
+    align-items: center;
+    color: white;
+}

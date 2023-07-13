@@ -2,7 +2,7 @@
 .SectionHome {
     grid-area: section;
     background-color: rgb(80, 80, 107);
-    min-height: 400px;
+    min-height: 700px;
     max-height: 1400px;
     height: auto;
     word-wrap: break-word;
@@ -15,8 +15,7 @@
     flex-wrap: wrap;
     grid-template-rows: repeat(4, 500px);
     grid-template-columns: repeat(4, 500px);
-    justify-content: space-around;
-    align-content: center;
+ 
 
     div {
         background-color: rgba(27, 135, 185, 0.589);
@@ -40,18 +39,9 @@
     grid-template-rows: repeat(1, 300px);
     grid-template-columns: repeat(2, 300px);
     /* justify-items: center;*/
-    align-items: center;
-    align-content: center;
+   
 }
 
-
-.AboutMe {
-    color: black;
-    overflow: hide;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px;
-}
 
 
 /*SERVICIOS INICIO*/

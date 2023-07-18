@@ -11,13 +11,11 @@
     overflow: auto;
     /*display: grid;*/
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     grid-template-rows: repeat(4, 500px);
     grid-template-columns: repeat(4, 500px);
- 
+    text-align: center;
 
-    div {
+    .card-body {
         background-color: rgba(27, 135, 185, 0.589);
 
     }
@@ -47,7 +45,6 @@
 /*SERVICIOS INICIO*/
 .Servicios_ {
     min-height: 630px;
-    max-height: 1400px;
     grid-area: section;
     /* display: grid;*/
     display: flex;
@@ -56,13 +53,33 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-right: 30px;
+
+    .Card{
+        width: 20rem;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-right: 30px;
+        .card-text{
+            height: 120px;
+        }
+    }
+            h5{text-align: center;
+                }
+    
+    a{
+        margin-left: 100px;
+    }
+            }
+
+
 
 
 /*PLANES INICIO*/
 .SectionPlanes {
     grid-area: section;
-    max-height: 900px;
     min-height: 610px;
     /* display: grid;*/
     display: flex;
@@ -72,8 +89,21 @@
     align-content: center;
     grid-template-rows: repeat(4, 400px);
     grid-template-columns: repeat(4, 400px);
-
+    margin-bottom: 30px;
+ 
+   
+    .div{
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
+        h3{text-align: center;
+            }
+
+a{
+    margin-left: 100px;
+}
+        }
+
 
 .Tarjeta {
     width: 300px;

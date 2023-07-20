@@ -6,7 +6,7 @@ footer {
     padding: 80px 0;
 
     p {
-        color:$primary-color;
+        color: $primary-color;
     }
 
 }
@@ -24,6 +24,7 @@ footer {
 .footer-links {
     width: 25%;
     padding: 0 15px;
+    margin-left: 50px;
 
     h4 {
         font-size: 20px;
@@ -39,7 +40,7 @@ footer {
     ul li a {
         font-size: 18px;
         text-decoration: none;
-        color:$primary-color;
+        color: $primary-color;
         display: block;
         margin-bottom: 15px;
         transition: all .3s ease;
@@ -61,7 +62,11 @@ footer {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color:$primary-color;
+    color: $primary-color;
     transition: all .5s ease;
 
+}
+#links{
+    margin-left: 50px;
+  
 }

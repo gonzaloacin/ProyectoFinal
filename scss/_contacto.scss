@@ -10,10 +10,11 @@
     }
 
     /* MEDIA QUERY CONTACTO*/
+
     @media(min-width: 480px) {
         .contact-wrapper {
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 1fr 1fr;
         }
 
         .contact-wrapper>* {

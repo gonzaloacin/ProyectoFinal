@@ -30,7 +30,7 @@ header {
 }
 header nav {
   display: flex;
-  margin-left: 15px;
+  margin-left: 25px;
 }
 header nav ul {
   display: flex;
@@ -196,6 +196,7 @@ main {
   margin: auto;
   margin-top: 60px;
   margin-bottom: 60px;
+  margin-left: 70px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 250px;
@@ -243,6 +244,7 @@ main {
   }
   .Container-Img .Box-Img img {
     height: 200px;
+    width: 200px;
   }
 }
 /*CONTACTO*/

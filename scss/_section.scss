@@ -15,7 +15,6 @@
     text-align: center;
     background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(20, 121, 76) 35%, rgb(0, 212, 255) 100%);
 
-
     .card {
         margin-left: 40px;
         margin-right: 40px;
@@ -32,8 +31,6 @@
         text-decoration: underline;
     }
 }
-
-
 
 .card-group {
     margin-right: 20px;
@@ -55,7 +52,6 @@
     margin-bottom: 100px;
     margin-top: 30px;
 
-
     #card1,
     #card2,
     #card3,
@@ -68,8 +64,8 @@
 
 /*SERVICIOS INICIO*/
 .servicios_ {
-    min-height: 630px;
     grid-area: section;
+    min-height: 630px;
     /* display: grid;*/
     display: flex;
     grid-template-rows: repeat(4, 150px);
@@ -77,11 +73,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-right: 30px;
     text-align: center;
-
 
     .card {
         width: 20rem;
@@ -107,8 +99,6 @@
 
 /*PLANES INICIO*/
 .sectionplanes {
-
-    min-height: 630px;
     grid-area: section;
     /* display: grid;*/
     display: flex;
@@ -119,9 +109,7 @@
     flex-wrap: wrap;
     margin-bottom: 50px;
     margin-top: 50px;
-    margin-right: 30px;
     text-align: center;
-
 
     .card {
         width: 20rem;
@@ -181,7 +169,6 @@
         transform: scale(1.2);
     }
 }
-
 
 .container-img .box-img:nth-child(1) {
     grid-column-start: span 2;

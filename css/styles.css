@@ -49,7 +49,6 @@ main {
   /*display: grid;*/
   display: flex;
   flex-flow: wrap;
-  justify-content: center;
 }
 
 /*SUB MENU PAGINAS*/
@@ -59,12 +58,13 @@ main {
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(20, 121, 76) 35%, rgb(0, 212, 255) 100%);
   align-items: center;
   color: white;
+  align-items: center;
+  justify-content: center;
 }
 
 .SubMenuHome {
   grid-area: section;
   height: auto;
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(20, 121, 76) 35%, rgb(0, 212, 255) 100%);
   align-items: center;
   color: white;
 }
@@ -81,7 +81,6 @@ main {
   max-height: 1400px;
   height: auto;
   word-wrap: break-word;
-  margin: 0 auto;
   display: block;
   overflow: auto;
   /*display: grid;*/
@@ -89,13 +88,24 @@ main {
   grid-template-rows: repeat(4, 500px);
   grid-template-columns: repeat(4, 500px);
   text-align: center;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(20, 121, 76) 35%, rgb(0, 212, 255) 100%);
+}
+.SectionHome .card {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .SectionHome .card-body {
-  background-color: rgba(27, 135, 185, 0.589);
+  background-color: #04488d;
+  color: white;
 }
 .SectionHome h5 {
   text-align: center;
   text-decoration: underline;
+}
+
+.card-group {
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 /*NOSOTROS INICIO*/
@@ -143,9 +153,11 @@ main {
 }
 .Servicios_ h5 {
   text-align: center;
+  margin-top: 20px;
 }
 .Servicios_ a {
   margin-left: 100px;
+  border-radius: 15px;
 }
 
 /*PLANES INICIO*/
@@ -161,6 +173,7 @@ main {
   grid-template-rows: repeat(4, 400px);
   grid-template-columns: repeat(4, 400px);
   margin-bottom: 30px;
+  overflow: hidden;
 }
 .SectionPlanes .div {
   margin-bottom: 50px;
@@ -172,6 +185,7 @@ main {
 }
 .SectionPlanes a {
   margin-left: 100px;
+  border-radius: 15px;
 }
 .SectionPlanes #Plan1, .SectionPlanes #Plan2, .SectionPlanes #Plan3 {
   margin-right: 50px;
@@ -198,7 +212,7 @@ main {
   margin-bottom: 60px;
   margin-left: 70px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1);
   grid-template-rows: 250px;
   grid-gap: 20px;
 }
@@ -312,6 +326,7 @@ main {
   border: 0;
   text-transform: uppercase;
   padding: 1em;
+  border-radius: 15px;
 }
 
 .contact-info h4,

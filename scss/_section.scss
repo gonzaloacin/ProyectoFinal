@@ -16,12 +16,13 @@
     background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(20, 121, 76) 35%, rgb(0, 212, 255) 100%);
 
 
-    .card{
-    margin-left: 40px;
-    margin-right: 40px;
-}
+    .card {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
     .card-body {
-        background-color:  #04488d;
+        background-color: #04488d;
         color: $primary-color;
 
     }
@@ -41,7 +42,7 @@
 
 
 /*NOSOTROS INICIO*/
-.sectionAbout {
+.sectionabout {
     grid-area: section;
     background-color: $primary-color;
     height: auto;
@@ -51,11 +52,14 @@
     grid-template-rows: repeat(1, 300px);
     grid-template-columns: repeat(2, 300px);
     /* justify-items: center;*/
-    margin-top: 100px;
     margin-bottom: 100px;
+    margin-top: 30px;
 
 
-    #card1, #card2, #card3, #card4 {
+    #card1,
+    #card2,
+    #card3,
+    #card4 {
         margin-right: 30px;
         margin-left: 30px;
     }
@@ -76,14 +80,14 @@
     margin-bottom: 50px;
     margin-top: 50px;
     margin-right: 30px;
-    
+    text-align: center;
+
 
     .card {
         width: 20rem;
         margin-bottom: 50px;
         margin-top: 50px;
         margin-right: 30px;
-  
 
         .card-text {
             height: 120px;
@@ -96,56 +100,49 @@
     }
 
     a {
-        margin-left: 100px;
+
         border-radius: 15px;
     }
 }
 
 /*PLANES INICIO*/
 .sectionplanes {
+
+    min-height: 630px;
     grid-area: section;
-    min-height: 610px;
     /* display: grid;*/
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(4, 150px);
     justify-content: center;
-    align-content: center;
-    grid-template-rows: repeat(4, 400px);
-    grid-template-columns: repeat(4, 400px);
-    margin-bottom: 30px;
-    overflow: hidden;
-    .div {
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-right: 30px;
+    text-align: center;
+
+
+    .card {
+        width: 20rem;
         margin-bottom: 50px;
         margin-top: 50px;
+        margin-right: 30px;
+
+        .card-text {
+            height: 120px;
+        }
     }
 
-    h3 {
+    h5 {
         text-align: center;
-        text-decoration: underline;
+        margin-top: 20px;
     }
 
     a {
-        margin-left: 100px;
+
         border-radius: 15px;
     }
-    #plan1, #plan2, #plan3 {
-        margin-right: 50px;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        
-    }
-}
-
-
-.tarjeta {
-    width: 300px;
-    padding-right: 10px;
-
-    @media (max-widht: 480px) {
-        grid-template-columns: repeat(1 / span 3);
-    }
-
 }
 
 /*PORTAFOLIO*/
@@ -216,6 +213,6 @@
     .container-img .box-img img {
         height: 200px;
         width: 200px;
-        
+
     }
 }

@@ -112,7 +112,7 @@ main {
 }
 
 /*NOSOTROS INICIO*/
-.sectionAbout {
+.sectionabout {
   grid-area: section;
   background-color: white;
   height: auto;
@@ -122,10 +122,13 @@ main {
   grid-template-rows: repeat(1, 300px);
   grid-template-columns: repeat(2, 300px);
   /* justify-items: center;*/
-  margin-top: 100px;
   margin-bottom: 100px;
+  margin-top: 30px;
 }
-.sectionAbout #card1, .sectionAbout #card2, .sectionAbout #card3, .sectionAbout #card4 {
+.sectionabout #card1,
+.sectionabout #card2,
+.sectionabout #card3,
+.sectionabout #card4 {
   margin-right: 30px;
   margin-left: 30px;
 }
@@ -144,6 +147,7 @@ main {
   margin-bottom: 50px;
   margin-top: 50px;
   margin-right: 30px;
+  text-align: center;
 }
 .servicios_ .card {
   width: 20rem;
@@ -159,51 +163,40 @@ main {
   margin-top: 20px;
 }
 .servicios_ a {
-  margin-left: 100px;
   border-radius: 15px;
 }
 
 /*PLANES INICIO*/
 .sectionplanes {
+  min-height: 630px;
   grid-area: section;
-  min-height: 610px;
   /* display: grid;*/
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  grid-template-rows: repeat(4, 150px);
+  grid-template-columns: repeat(4, 150px);
   justify-content: center;
-  align-content: center;
-  grid-template-rows: repeat(4, 400px);
-  grid-template-columns: repeat(4, 400px);
-  margin-bottom: 30px;
-  overflow: hidden;
-}
-.sectionplanes .div {
+  align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
   margin-top: 50px;
-}
-.sectionplanes h3 {
+  margin-right: 30px;
   text-align: center;
-  text-decoration: underline;
+}
+.sectionplanes .card {
+  width: 20rem;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-right: 30px;
+}
+.sectionplanes .card .card-text {
+  height: 120px;
+}
+.sectionplanes h5 {
+  text-align: center;
+  margin-top: 20px;
 }
 .sectionplanes a {
-  margin-left: 100px;
   border-radius: 15px;
-}
-.sectionplanes #plan1, .sectionplanes #plan2, .sectionplanes #plan3 {
-  margin-right: 50px;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-.tarjeta {
-  width: 300px;
-  padding-right: 10px;
-}
-@media (max-widht: 480px) {
-  .tarjeta {
-    grid-template-columns: repeat(1/span 3);
-  }
 }
 
 /*PORTAFOLIO*/

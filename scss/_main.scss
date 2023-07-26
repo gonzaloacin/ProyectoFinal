@@ -11,17 +11,21 @@ main {
 }
 
 /*SUB MENU PAGINAS*/
-.SubMenu {
+.submenu {
     grid-area: main;
-    height: 100px;
+    height: 150px;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(20,121,76,1) 35%, rgba(0,212,255,1) 100%);
     align-items: center;
     color: white;
     align-items: center;
     justify-content: center;
+   
+    h1, h5 {
+        text-align: center;
+    }
 }
 
-.SubMenuHome {
+.submenuhome {
     grid-area: section;
     height: auto;
     align-items: center;

@@ -1,5 +1,5 @@
 /*SECTION HOME INICIO*/
-.SectionHome {
+.sectionHome {
     grid-area: section;
     background-color: rgb(80, 80, 107);
     min-height: 700px;
@@ -41,7 +41,7 @@
 
 
 /*NOSOTROS INICIO*/
-.SectionAbout {
+.sectionAbout {
     grid-area: section;
     background-color: $primary-color;
     height: auto;
@@ -63,7 +63,7 @@
 }
 
 /*SERVICIOS INICIO*/
-.Servicios_ {
+.servicios_ {
     min-height: 630px;
     grid-area: section;
     /* display: grid;*/
@@ -78,7 +78,7 @@
     margin-right: 30px;
     
 
-    .Card {
+    .card {
         width: 20rem;
         margin-bottom: 50px;
         margin-top: 50px;
@@ -102,7 +102,7 @@
 }
 
 /*PLANES INICIO*/
-.SectionPlanes {
+.sectionplanes {
     grid-area: section;
     min-height: 610px;
     /* display: grid;*/
@@ -129,7 +129,7 @@
         margin-left: 100px;
         border-radius: 15px;
     }
-    #Plan1, #Plan2, #Plan3 {
+    #plan1, #plan2, #plan3 {
         margin-right: 50px;
         margin-bottom: 50px;
         margin-top: 50px;
@@ -138,7 +138,7 @@
 }
 
 
-.Tarjeta {
+.tarjeta {
     width: 300px;
     padding-right: 10px;
 
@@ -150,7 +150,7 @@
 
 /*PORTAFOLIO*/
 
-.Container-Img {
+.container-img {
     width: $full-width;
     max-width: 1100px;
     margin: auto;
@@ -164,7 +164,7 @@
 
 }
 
-.Container-Img .Box-Img {
+.container-img .box-img {
     figure {
         width: $full-width;
         height: $full-height;
@@ -186,34 +186,34 @@
 }
 
 
-.Container-Img .Box-Img:nth-child(1) {
+.container-img .box-img:nth-child(1) {
     grid-column-start: span 2;
 }
 
-.Container-Img .Box-Img:nth-child(4) {
+.container-img .box-img:nth-child(4) {
     grid-row-start: span 2;
 }
 
 @media screen and (max-width:800px) {
-    .Container-Img {
+    .container-img {
         width: 95%;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
         grid-template-rows: 200px;
     }
 
-    .Container-Img .Box-Img:nth-child(1) {
+    .container-img .box-img:nth-child(1) {
         grid-column-start: span 1;
     }
 }
 
 @media screen and (max-width:500px) {
-    .Container-Img {
+    .container-Img {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .Container-Img .Box-Img img {
+    .container-img .box-img img {
         height: 200px;
         width: 200px;
         
